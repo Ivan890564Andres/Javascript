@@ -1,0 +1,65 @@
+<! DOCTYPE html>
+	<html lang="pt-br">
+
+		<head>
+			<title>	Treino Javacript </title>
+				<meta charset="utf-8">
+
+        <script type="text/javascript" src="js/main06.js"> </script>
+
+		</head>
+
+		<body onload="carregarBody()">
+
+			<script>
+//				alert("Meu último aviso de alerta escrito dentro do body do Html")
+// este aviso de alerta é executado em ultimo lugar
+		</script>
+			<h1> Treino de JavaScript do curso da DIO: Digital Innovation One </h1>
+			<h2> Parte2: Manipulando elementos da página (18m34s) <h2>
+			<p>	Bootcamp: HTML Web Developer
+			<p>	Curso07: Programação para Internet com JavaScript
+			<p>	Etapa02:	Desenvolva páginas Web com JavaScript
+			<p>	Professor/Instrutor : Rafael Galleani
+			<p> VídeoAula 02: Parte2: Manipulando elementos da página (18m34s)
+			<p>
+
+<button type="button" onclick="botao()"> Clique aqui </button>
+<p>
+<button type="button" onclick="pedeIdade()"> Qual sua idade ? </button>
+<h3 id="suaIdade">  </h3>
+<button type="button" onclick="novaPageOutraJanela()"> Muda de page em outra Janela </button>
+<p id="pageDac">  </p>
+<button type="button" onclick="novaPageMesmaJanela()"> Muda de page na mesma Janela</button>
+<p>  </p>
+<p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">
+	Passe o mouse por cima deste texto </p>
+<p>
+<button type="button" id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">
+	Passe o mouse por cima deste botão </button>
+
+<p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">
+		Passe o mouse por cima deste texto:
+		ao passar o mouse sobre este texto, as funções trocar() e voltar() são executadas no texto
+		de cima e não neste texto. Talvez isso ocorra porque o id=mousemove é o mesmo.
+		Mas e se eu mudar o id e usar as mesmas funções qual será o resultado ? </p>
+<p>
+
+<p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)"> Teste de função muda
+	texto e retorna ao texto anterior. Resultado: continua alternando e retornando o texto do
+	primeiro id=mousemove, como se as funções trocar e voltar fossem feitas para esse elementos.
+Para reolver ete problema ua-e o thi dentro da função.   </p>
+
+<p id="mousemove3" onmouseover="trocar(this)" onmouseout="voltar(this)"> Teste das funções usando
+	o parâmetro "this" na função do html e usando o parâmetro "elemento" na função do CSS
+</p>
+
+<select onchange="funcaoChange(this)">
+	<option value="1"> Valor 01 </option>
+	<option value="2"> Valor 02 </option>
+	<option value="3"> Valor 03 </option>
+</select>
+
+		</body>
+
+	</html>
